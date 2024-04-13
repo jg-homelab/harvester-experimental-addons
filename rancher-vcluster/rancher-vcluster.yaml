@@ -17,10 +17,10 @@ spec:
   chart: vcluster
   valuesContent: |-
     hostname: ""
-    rancherVersion: "v2.8.2"
+    rancherVersion: "v2.8.3"
     bootstrapPassword: ""
     vcluster:
-      image: rancher/k3s:v1.27.10-k3s2
+      image: rancher/k3s:v1.28.8+k3s1
     sync:
       ingresses:
         enabled: "true"
@@ -47,7 +47,7 @@ spec:
           targetNamespace: cert-manager
           repo: https://charts.jetstack.io
           chart: cert-manager
-          version: v1.5.1
+          version: v1.13.5
           helmVersion: v3
           set:
             installCRDs: "true"
